@@ -9,7 +9,8 @@ To use the ErrorHandling contract, you'll need to have a Solidity development en
 
     * It uses the require statement to check if the value is greater than 0. If the condition is not met, it throws an exception with the error message "Value must be greater than 0."
 
-    * It uses the assert statement to validate internal consistency. It multiplies the value by 2 and checks if the result is greater than or equal to the value. If the condition is false, it indicates an internal error, and the contract execution is reverted.
+    * It uses the assert statement to validate internal consistency. It checks if the value is not equal to 5 ,it will execute further but If the condition is false, it indicates an internal error, and the contract       
+      execution is reverted.
 
     * It uses the revert statement to revert the transaction and throw an exception if the value is equal to 42. The error message "The value cannot be 42" is provided in this case.
 
